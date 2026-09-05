@@ -1,0 +1,128 @@
+[
+  {
+    "id": "q1",
+    "query": "What is the rate limit for the API and what happens when it's exceeded?",
+    "answerable": true,
+    "relevant_doc_ids": ["api-guidelines"],
+    "expected_keywords": ["100", "minute", "429", "retry-after"]
+  },
+  {
+    "id": "q2",
+    "query": "What pagination style does the API use for list endpoints?",
+    "answerable": true,
+    "relevant_doc_ids": ["api-guidelines"],
+    "expected_keywords": ["cursor"]
+  },
+  {
+    "id": "q3",
+    "query": "How long are auth tokens valid before they need to be refreshed?",
+    "answerable": true,
+    "relevant_doc_ids": ["api-guidelines"],
+    "expected_keywords": ["24 hours"]
+  },
+  {
+    "id": "q4",
+    "query": "How does a rolling deploy work?",
+    "answerable": true,
+    "relevant_doc_ids": ["deployment"],
+    "expected_keywords": ["one instance at a time", "health check"]
+  },
+  {
+    "id": "q5",
+    "query": "How do I roll back a bad deployment?",
+    "answerable": true,
+    "relevant_doc_ids": ["deployment"],
+    "expected_keywords": ["deploy.sh", "previous"]
+  },
+  {
+    "id": "q6",
+    "query": "Where are application secrets stored and how do you rotate one?",
+    "answerable": true,
+    "relevant_doc_ids": ["deployment"],
+    "expected_keywords": ["secrets manager", "restart"]
+  },
+  {
+    "id": "q7",
+    "query": "What's the difference between a SEV1 and a SEV3 incident?",
+    "answerable": true,
+    "relevant_doc_ids": ["incident-response"],
+    "expected_keywords": ["full outage", "workaround"]
+  },
+  {
+    "id": "q8",
+    "query": "How does on-call escalation work if the primary doesn't respond?",
+    "answerable": true,
+    "relevant_doc_ids": ["incident-response"],
+    "expected_keywords": ["5 minutes", "secondary"]
+  },
+  {
+    "id": "q9",
+    "query": "When is a postmortem required and what must it contain?",
+    "answerable": true,
+    "relevant_doc_ids": ["incident-response"],
+    "expected_keywords": ["timeline", "root cause", "action items"]
+  },
+  {
+    "id": "q10",
+    "query": "Why must new database columns be added as nullable first?",
+    "answerable": true,
+    "relevant_doc_ids": ["database-migrations"],
+    "expected_keywords": ["rolling deploy", "old code"]
+  },
+  {
+    "id": "q11",
+    "query": "What happens if a migration times out during a deploy?",
+    "answerable": true,
+    "relevant_doc_ids": ["database-migrations", "deployment"],
+    "expected_keywords": ["5 minutes", "abort"]
+  },
+  {
+    "id": "q12",
+    "query": "How are migrations tested before merging?",
+    "answerable": true,
+    "relevant_doc_ids": ["database-migrations"],
+    "expected_keywords": ["ci", "production schema"]
+  },
+  {
+    "id": "q13",
+    "query": "What is the capital of France?",
+    "answerable": false,
+    "relevant_doc_ids": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "q14",
+    "query": "What's our policy on remote work and office attendance?",
+    "answerable": false,
+    "relevant_doc_ids": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "q15",
+    "query": "Which programming language should I use for new services?",
+    "answerable": false,
+    "relevant_doc_ids": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "q16",
+    "query": "Can clients construct their own pagination cursor?",
+    "answerable": true,
+    "relevant_doc_ids": ["api-guidelines"],
+    "expected_keywords": ["opaque", "never"]
+  },
+  {
+    "id": "q17",
+    "query": "How many API major versions are supported at once and for how long?",
+    "answerable": true,
+    "relevant_doc_ids": ["api-guidelines"],
+    "expected_keywords": ["6 months", "previous major version"]
+  },
+  {
+    "id": "q18",
+    "query": "What's our vacation and PTO policy?",
+    "answerable": false,
+    "relevant_doc_ids": [],
+    "expected_keywords": []
+  }
+]
